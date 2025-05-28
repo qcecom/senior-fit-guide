@@ -13,6 +13,7 @@ const HomeHealthCare = lazy(() => import('./HomeHealthCare'));
 const Videos = lazy(() => import('./Videos'));
 const Blog = lazy(() => import('./Blog'));
 const Contact = lazy(() => import('./Contact'));
+const Ebook = lazy(() => import('./Ebook')); // Thêm import cho Ebook
 
 const App = () => {
   // Gọi Google Analytics khi load trang
@@ -42,6 +43,7 @@ const App = () => {
             <Route path="/videos" element={<Videos />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/ebook" element={<Ebook />} /> {/* Thêm route cho Ebook */}
           </Routes>
         </Suspense>
       </main>
